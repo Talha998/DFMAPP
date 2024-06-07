@@ -11,6 +11,7 @@ import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
 import FirstScreen from './container/first_screen';
 
+
 import {
   Colors,
   DebugInstructions,
