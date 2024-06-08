@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
-
+import { useTheme } from './ThemeContext';
+// const styles = (theme) => StyleSheet.create({
 const styles = StyleSheet.create({
   background: {
     flex: 1,

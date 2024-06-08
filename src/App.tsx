@@ -9,9 +9,11 @@ import React, { useEffect } from 'react';
 import type {PropsWithChildren} from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
-import FirstScreen from './container/first_screen';
-
-
+import AppNavigator from './container/AppNavigator';
+import { ThemeProvider } from "./container/ThemeContext";
+import 'react-native-gesture-handler';
+import HomeScreen from './container/HomeScreen';
+import { NavigationContainer } from '@react-navigation/native';
 import {
   Colors,
   DebugInstructions,
@@ -37,7 +39,12 @@ function App(): React.JSX.Element {
 
   return (
     <>
-    <FirstScreen />
+     <ThemeProvider>
+     {/* <NavigationContainer>
+    <AppNavigator />
+    </NavigationContainer> */}
+    <HomeScreen />
+    </ThemeProvider>
     </>
   );
 }

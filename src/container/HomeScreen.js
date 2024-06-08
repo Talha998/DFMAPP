@@ -2,7 +2,7 @@ import React , {useState} from 'react';
 import { View, Text, Image, TouchableOpacity, TextInput ,    ImageBackground , StyleSheet , Modal } from 'react-native';
 import styles from '../styles';
 
-const FirstScreen = () => {
+const HomeScreen = () => {
     const [isModalVisible, setIsModalVisible] = useState(false);
 
     const toggleModal = () => {
@@ -144,4 +144,4 @@ const FirstScreen = () => {
 //   },
 // });
 
-export default FirstScreen;
+export default HomeScreen;
