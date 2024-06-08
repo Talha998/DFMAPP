@@ -84,17 +84,24 @@ const styles = StyleSheet.create({
   serverURLContainer: {
     backgroundColor: '#00544d',
     paddingVertical: 20,
-    // paddingHorizontal: 20,
     marginBottom: 0,
     borderRadius: 0,
-    alignSelf: 'stretch',
-     borderTopLeftRadius: 8,  // Apply border radius to top-left corner
-    borderTopRightRadius: 8, // Apply border radius to top-right corner
+    borderTopLeftRadius: 8,
+    borderTopRightRadius: 8,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: 20, // Add horizontal padding for better spacing
   },
   serverURL: {
     color: 'white',
-    textAlign: 'center',
-    
+    // textAlign: 'center',
+    flex: 1,
+    marginLeft: 0, // Ensure text doesn't overlap with the icon
+  },
+  cancelIcon: {
+    width: 24,
+    height: 24,
   },
   inputf1: {
     backgroundColor: 'white',
@@ -149,7 +156,114 @@ const styles = StyleSheet.create({
   },
   modalContent_rt :{
     padding: 10
+  },
+  modalOverlay: {
+    flex: 1,
+    justifyContent: 'center', // Center the modal vertically
+    alignItems: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  },
+  modalContentf2: {
+    width: '90%',
+    height: '90%',
+    backgroundColor: 'white',
+    borderRadius: 10,
+  },
+  serverURLContainerf2: {
+    backgroundColor: '#00544d',
+    paddingVertical: 18,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: 12,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+  },
+  serverURLContainer_bottom_f2:{
+    backgroundColor: '#00544d',
+    paddingVertical: 14,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: 20,
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+
+  },
+  serverURLf2: {
+    color: 'white',
+    // textAlign: 'center',
+    fontWeight: "700",
+    fontSize: 16,
+    flex: 1,
+    marginLeft: 0,
+  },
+  serverURL_bottom_f2: {
+    color: 'white',
+    textAlign: 'center',
+    flex: 1,
+    marginLeft: 0,
+  },
+  cancelIcon: {
+    width: 24,
+    height: 24,
+  },
+  modalContent_rt_f2: {
+    flex: 1,
+    paddingHorizontal: 12
+  },
+  scrollViewContentf2: {
+    paddingVertical: 20,
+  },
+  modalTextf2: {
+    marginBottom: 20,
+    textAlign: 'left',
+    paddingHorizontal: 10
+  },
+  closeButtonf2: {
+    backgroundColor: '#2196F3',
+    padding: 10,
+    borderRadius: 5,
+    alignSelf: 'center',
+    marginTop: 10,
+  },
+  closeButtonTextf2: {
+    color: 'white',
+    fontWeight: 'bold',
+  },
+  textStyleSubtitle: {
+    fontSize: 14,
+    fontWeight: "500",
+    color: "BLACK",
+    paddingBottom: 5,
+    textAlign: 'justify',
+    lineHeight: 20,
+  },
+  textStyle_second: {
+    paddingTop: 8
+   },
+  textStyle_H1: {
+    fontSize: 16,
+    fontWeight: "700",
+    color: "BLACK",
+  },
+  textStyleSubtitle_TEXT: {
+    fontSize: 14,
+    fontWeight: "500",
+    color: "BLACK",
+    textAlign: 'justify',
+    lineHeight: 20,
+    paddingTop: 5
+  },
+  textStyleSubtitle_TEXT_f2: {
+    fontSize: 14,
+    fontWeight: "500",
+    color: "BLACK",
+    textAlign: 'justify',
+    lineHeight: 20,
+    paddingTop: 14
   }
+  
 }); 
 
 export default styles;
